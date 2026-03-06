@@ -30,7 +30,7 @@ pip install openslide-python girder-client tqdm
 
 ## Usage
 
-### 1. Local directory
+### 1. Local/HiPerGator directory
 
 ```bash
 python local_get_scanned_dates.py \
