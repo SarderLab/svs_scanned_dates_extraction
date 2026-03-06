@@ -1,6 +1,6 @@
 # svs-scanned-dates
 
-Extract scan dates from SVS whole-slide images — works with both a **local/Hipergator directory** and an **Athena/Girder platform** folder.
+Extract scan dates from SVS whole-slide images: works with both a **local/Hipergator directory** and an **Athena/Girder platform** folder.
 
 ---
 
@@ -8,7 +8,7 @@ Extract scan dates from SVS whole-slide images — works with both a **local/Hip
 
 | Script | Source | Input |
 |--------|--------|-------|
-| `local_get_scanned_dates.py` | Local filesystem | Path to a directory of `.svs` files |
+| `local_get_scanned_dates.py` | Local/HiPerGator filesystem | Path to a directory of `.svs` files |
 | `athena_get_scanned_dates.py` | Athena (Girder) | Girder folder ID |
 
 Both scripts write results to a CSV in the output directory you specify.
@@ -21,7 +21,7 @@ Both scripts write results to a CSV in the output directory you specify.
 pip install openslide-python girder-client tqdm
 ```
 
-> **Note:** `openslide` also requires the native OpenSlide library.  
+> **Note:** `openslide` also may require the native OpenSlide library.  
 > - Linux: `sudo apt install openslide-tools`  
 > - macOS: `brew install openslide`  
 > - HiPerGator/cluster: `module load openslide`
@@ -83,5 +83,5 @@ Both scripts try two methods in order:
 
 ```
 scanned_dates_output/
-└── scanned_dates.csv           # (Athena) or transplant_mayo_svs_dates.csv (local)
+└── scanned_dates.csv           # (Athena) or scanned_dates.csv (local/hipergator)
 ```
