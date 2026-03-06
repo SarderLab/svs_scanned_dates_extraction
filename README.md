@@ -74,8 +74,8 @@ python athena_get_scanned_dates.py \
 
 Both scripts try two methods in order:
 
-1. **Direct Aperio property** — `aperio.Date` in the slide's OpenSlide properties
-2. **ImageDescription fallback** — parses the pipe-delimited `tiff.ImageDescription` field for a `Date = ...` entry
+1. **Direct Aperio property**: `aperio.Date` in the slide's OpenSlide properties
+2. **ImageDescription fallback**: parses the pipe-delimited `tiff.ImageDescription` field for a `Date = ...` entry
 
 ---
 
